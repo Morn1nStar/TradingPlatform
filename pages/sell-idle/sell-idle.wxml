@@ -1,0 +1,72 @@
+
+  <van-cell-group>
+    <van-field
+      model:value="{{ productName }}"
+      type="textarea"
+      placeholder="请输入宝贝的名称"
+      autosize
+      border="{{ false }}"
+      required
+    />
+
+    <van-field
+      model:value="{{ description }}"
+      type="textarea"
+      placeholder="描述一下宝贝的品牌型号、货品来源…"
+      autosize
+      border="{{ false }}"
+    />
+    <van-uploader file-list="{{ fileList }}" bind:after-read="onAfterRead"/>
+    <van-field
+      model:value="{{ price }}"
+      type="number"
+      label="定价"
+      placeholder="请输入价格"
+      required
+      border="{{ false }}"
+    />
+
+    <van-field  
+      value="{{ delivery }}"  
+      is-link  
+      readonly  
+      label="发货方式"  
+      required  
+      placeholder="请选择发货方式"  
+      bind:tap="onClickDelivery"  
+    />  
+    <van-popup show="{{ showDelivery }}" round position="bottom">  
+      <van-cascader  
+        wx:if="{{ showDelivery }}"  
+        value="{{ cascaderValue }}"  
+        title="请选择发货方式"  
+        options="{{ options }}"  
+        bind:close="onCloseDelivery"  
+        bind:finish="onFinishDelivery"  
+      />  
+    </van-popup>  
+  
+<van-field  
+  value="{{ category }}"  
+  is-link  
+  readonly  
+  label="分类"  
+  required  
+  placeholder="请选择分类"  
+  bind:tap="onClickCategory"  
+/>  
+<van-popup show="{{ showCategory }}" round position="bottom">  
+  <van-cascader  
+    wx:if="{{ showCategory }}"  
+    value="{{ cascaderValue }}"  
+    title="请选择分类"  
+    options="{{ options1 }}"  
+    bind:close="onCloseCategory"  
+    bind:finish="onFinishCategory"  
+  />  
+</van-popup>
+
+<van-button type="primary" block bind:click="onSubmit">发布</van-button>
+
+</van-cell-group>
+

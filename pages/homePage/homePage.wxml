@@ -1,0 +1,121 @@
+<van-popup show="{{ show }}" bind:close="onClose">
+  <view class="popup-content">
+    <text>检测到您未登录</text>
+    <van-button round type="info" bind:click="onLoginClick">立即登录</van-button>
+  </view>
+</van-popup>
+
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+  >
+  <view slot="action" class="search-action" bind:tap="onClick">搜索</view>
+</van-search>
+
+<van-tabs active="{{ active }}">
+  <van-tab title="全部">
+    <block wx:for="{{products}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}" 
+      bind:tap="goToDetail"  
+      data-id="{{item.id}}" 
+    />  
+  </block>
+  </van-tab>
+
+  <van-tab title="最新发布">
+    <block wx:for="{{recentProducts}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}"  
+      bind:tap="goToDetail"  
+      data-id="{{item.id}}" 
+    />  
+  </block>
+  </van-tab> 
+
+  <van-tab title="数码产品">
+    <block wx:for="{{digitalProducts}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}"  
+      bind:tap="goToDetail"  
+      data-id="{{item.id}}" 
+    />  
+  </block>
+  </van-tab>
+  
+  <van-tab title="美食">
+    <block wx:for="{{food}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}"  
+      bind:tap="goToDetail"  
+      data-id="{{item.id}}" 
+    />  
+  </block>
+  </van-tab>
+
+  <van-tab title="服饰">
+    <block wx:for="{{clothes}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}"   
+      bind:tap="goToDetail"  
+      data-id="{{item.id}}" 
+    />  
+  </block>
+  </van-tab>
+
+  <van-tab title="日常用品">
+    <block wx:for="{{daily}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}"  
+      bind:tap="goToDetail"  
+      data-id="{{item.id}}" 
+    />  
+  </block>
+  </van-tab>
+
+  <van-tab title="书籍材料">
+    <block wx:for="{{books}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}" 
+      bind:tap="goToDetail"  
+      data-id="{{item.id}}" 
+    />  
+  </block>
+  </van-tab>
+
+</van-tabs>
+
+
+
+

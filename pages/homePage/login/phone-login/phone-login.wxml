@@ -1,0 +1,25 @@
+<view class="container">
+  <van-cell-group>
+    <van-field
+      model:value="{{ username }}"
+      label="用户名"
+      placeholder="请输入用户名"
+      border="{{ false }}"
+    />
+  </van-cell-group>
+
+  <van-cell-group>
+    <van-field
+      model:value="{{ password }}"
+      type="password"
+      label="密码"
+      placeholder="请输入密码"
+      border="{{ false }}"
+    />
+  </van-cell-group>
+
+  <view class="button-container">
+    <van-button type="info" block bind:click="login">登录</van-button>
+    <van-button type="info" block bind:click="register">注册</van-button>
+  </view>
+</view>

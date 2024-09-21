@@ -1,0 +1,23 @@
+<!--pages/user-center/information/information.wxml-->
+<view class="myInformation">
+  <!-- 用户头像 -->
+  <button class="above" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+    <text class="text">点击更换头像</text>
+  </button>
+
+  <!-- 用户信息 -->
+  <view class="info-container">
+    <!-- 用户信息条目 -->
+    <!-- 用户昵称 -->
+    <view class="userName">
+      <van-cell-group inset>
+        <van-cell title="昵称">
+          <input type="nickname" class="userName-input" placeholder="请填写昵称" />
+        </van-cell>
+      </van-cell-group>
+    </view>
+  </view>
+  
+  <van-button type="primary" block bind:tap="onButtonClick">保存</van-button>
+</view>

@@ -1,0 +1,7 @@
+<view class="container">
+  <image class="image" src="/images/icons/sell-idle-active.png"></image>
+  <van-button round type="primary" block>微信一键登录</van-button>
+  <van-button round type="info" block bind:tap="goToPhoneLogin">账号密码登录</van-button>
+  <van-button round type="info" block bind:tap="goToManagerLogin">管理端登录</van-button>
+
+</view>

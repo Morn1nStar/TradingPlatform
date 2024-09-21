@@ -1,0 +1,15 @@
+<block wx:for="{{products}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      tag="{{item.state}}"
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}"  
+      bind:tap="goToDetail"  
+      data-id="{{item.id}}" >
+      <view slot="footer">
+          <van-button size="mini" bind:tap="deleteProduct" data-id="{{item.id}}">删除订单</van-button>
+      </view>
+      </van-card>
+</block>

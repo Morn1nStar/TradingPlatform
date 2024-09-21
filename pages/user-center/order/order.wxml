@@ -1,0 +1,13 @@
+
+<van-swipe-cell right-width="{{ 65 }}" >
+  <van-cell-group>
+    <van-card
+    num="2"
+    price="2.00"
+    desc="发货方式"
+    title="购买商品描述信息"
+    thumb="/images/icons/shopping.png"
+/>
+  </van-cell-group>
+  <view slot="right" class="van-swipe-cell__right">删除</view>
+</van-swipe-cell>

@@ -1,0 +1,19 @@
+search-action{
+  margin-right: 30rpx;
+}
+
+.popup-content {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.van-popup {
+  padding: 0;
+}
+
+.van-button {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 8px 16px;
+}

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/sell-idle/sell-idle",
+    "pages/user-center/user-center",
+    "pages/user-center/information/information",
+    "pages/homePage/detail/detail",
+    "pages/user-center/message/message",
+    "pages/user-center/order/order",
+    "pages/user-center/releasing/releasing",
+    "pages/user-center/manager/manager",
+    "pages/homePage/login/login",
+    "pages/homePage/login/phone-login/phone-login",
+    "pages/user-center/login/login"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#A2A9B0",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "首页",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/sell-idle/sell-idle",
+        "text": "卖闲置",
+        "iconPath": "images/icons/sell-idle.png",
+        "selectedIconPath": "images/icons/sell-idle-active.png"
+      },
+      {
+        "pagePath": "pages/user-center/user-center",
+        "text": "个人中心",
+        "iconPath": "images/icons/user-center.png",
+        "selectedIconPath": "images/icons/user-center-active.png"
+      }
+    ]
+  }
+}

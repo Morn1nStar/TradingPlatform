@@ -1,0 +1,14 @@
+<block wx:for="{{products}}" wx:key="id">  
+    <van-card  
+      data-nowdata="{{item}}"
+      price="{{item.price}}"  
+      desc="{{item.description}}"  
+      title="{{item.name}}"  
+      thumb="{{item.productImages[0].url}}" 
+    >  
+    <view slot="footer">
+    <van-button size="mini" bind:tap="illegal" data-id="{{item.id}}">违规订单</van-button>
+    <van-button size="mini" bind:tap="pass" data-id="{{item.id}}">审批通过</van-button>
+    </view>
+    </van-card>
+</block>

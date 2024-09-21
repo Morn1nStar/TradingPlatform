@@ -1,0 +1,25 @@
+<view class="image-container">
+  <swiper indicator-dots="true" indicator-color="white" indicator-active-color="grey">
+    <block wx:for="{{productDetail.productImages}}" wx:key="index">
+      <swiper-item>
+        <view class="item">
+          <image src="{{item.url}}" mode="aspectFit"/>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="content-container">
+  <text class="product-name">{{productDetail.name}}</text>
+  <text class="description-container">{{productDetail.description}}</text>
+  <text class="price-container">{{productDetail.price}}</text>
+  <text class="mail-container">{{productDetail.deliveryMethod}}</text>
+</view>
+
+<view class="goods-container">
+  <van-goods-action>
+    <van-goods-action-icon icon="shop-o" text="联系卖家" />
+    <van-goods-action-button text="立即购买" />
+  </van-goods-action>
+</view>

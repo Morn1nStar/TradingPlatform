@@ -1,0 +1,49 @@
+.item {  
+  width: 100%;  
+  height: 100%;  
+}  
+  
+image {  
+  width: 100%;  
+  height: 100%;  
+}  
+  
+.content-container {  
+  padding: 15px;  
+  margin: 0;  
+  width: 100%;  
+}  
+  
+/* 产品名称文本的样式 */  
+.product-name {  
+  font-size: 16px; /* 可根据需要调整大小 */  
+  font-weight: bold; /* 加粗字体 */  
+  color: #333; /* 可根据需要调整颜色 */  
+  margin-bottom: 20px; /* 增加下方间距 */  
+  display: block; /* 确保独占一行，如果需要的话 */  
+}  
+  
+/* 描述文本的样式 */  
+.description-container {  
+  display: block;  
+  font-size: 16px;  
+  color: #333;  
+  margin-bottom: 20px;  
+  line-height: 24px;  
+}  
+  
+/* 定价文本的样式 */  
+.price-container {  
+  display: block;  
+  font-size: 18px;  
+  color: #FF5722;  
+  margin-bottom: 20px;  
+  font-weight: bold;  
+}  
+  
+/* 邮寄方式文本的样式 */  
+.mail-container {  
+  display: block;  
+  font-size: 14px;  
+  color: #888;  
+}

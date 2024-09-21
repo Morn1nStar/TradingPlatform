@@ -1,0 +1,86 @@
+page{
+  background-color: #f5f5f5;
+}
+
+/* 页面整体样式 */
+.user-center {
+  padding: 20rpx;
+}
+
+/* 顶部区域样式 */
+.above {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+/* 头像样式 */
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+/* 用户名文本样式 */
+.above text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* 中间区域样式 */
+.middle-container {
+  background-color: #ffffff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+/* 中间标题样式 */
+.middle {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+/* 功能项容器样式 */
+.function-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+/* 功能项样式 */
+.function-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rpx;
+  transition: transform 0.2s ease;
+}
+
+/* 功能项图标样式 */
+.function-item image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 10rpx;
+}
+
+/* 功能项文本样式 */
+.function-item text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* 底部区域样式 */
+.bottom-container {
+  background-color: #ffffff;
+  padding: 30rpx;
+  border-radius: 15rpx;
+  margin-bottom: 40rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+

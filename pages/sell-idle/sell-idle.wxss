@@ -1,0 +1,5 @@
+/* pages/sell-idle/sell-idle.wxss */
+
+page{
+  background-color: #f5f5f5;
+}
